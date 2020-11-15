@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="aStar.js"></script>
+    <script src="djktra.js"></script>
+    <script src="bfs.js"></script>
+    <script src="dfs.js"></script>
+    <title>Path Visualizer</title>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER PART -->
+        <div id="header">
+            <div id="left-side">
+                <a href="#" id="logo">Path Visualizer</a>
+                <div id="select-algorithm">
+                    <a href="#" class="anchor-tag" id="algortihm-name">Select Algorithm</a>
+                    <img src="./assets/down-arrow.png" alt="" srcset="" id="down-arrow">
+                </div>
+                <div id="algorithm-list">
+                    <ul>
+                        <li onclick="setAlgorithmIndex(0)">A* Algorithm</li>
+                        <li onclick="setAlgorithmIndex(1)">Dijktras Algorithm</li>
+                        <li onclick="setAlgorithmIndex(2)">BFS</li>
+                    </ul>
+                </div>
+                <div id="target">
+                    <img src="./assets/fitness-ball.png" alt="" srcset="">
+                    <a href="#" class="anchor-tag">Set Target</a>
+                </div>
+                <div id="agent">
+                    <img src="./assets/soccer-player-white.png" alt="" srcset="">
+                    <a href="#" class="anchor-tag">Set Agent</a>
+                </div>
+                <div id="clear">
+                    <a href="#" class="anchor-tag">Clear</a>
+                </div>
+            </div>
+            <div id="right-side">
+                <a href="#" class="anchor-tag">Start Finding Path</a>
+            </div>
+        </div>
+        <!-- BODY PART -->
+        <div id="main-body">
+            <ul id="boxes">
+            </ul>
+        </div>
+        <br>
+        <div id="tutorial">
+            <h3>Don't understand how to use it? Check it out</h3>
+            <h4>Please turn off ad-block if using any</h4>
+            <iframe src="https://drive.google.com/file/d/1SVBLgAr4R37xHbNnBLJ-CYddjifeFPDQ/preview" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
